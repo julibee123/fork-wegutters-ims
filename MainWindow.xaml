@@ -713,7 +713,7 @@
                     </RadioButton.Content>
                 </RadioButton>
 
-                <RadioButton x:Name="rbStock" Style="{StaticResource NavigationRadioButtonStyle}" GroupName="Navigation">
+                <RadioButton x:Name="rbStock" Style="{StaticResource NavigationRadioButtonStyle}" GroupName="Navigation" Checked="rbStock_Checked">
                     <RadioButton.Content>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="Resources/stock_icon.png" Width="20" Height="20" Margin="0,0,10,0"/>

@@ -261,10 +261,27 @@ namespace WEGutters
         // This method will save the grid as an Excel file
         private void Stock_Excel_Click(object sender, RoutedEventArgs e)
         {
-            // Excel generation requires a third-party library (a "NuGet package")
-            // such as "EPPlus".
+            try
+            {
+                bool exported = ExportToExcel.ExportWithSaveDialog(this, InventoryList);
 
-            MessageBox.Show("Export to Excel... (requires Excel library)");
+                if (!exported)
+                {
+                    // Distinguish empty list vs cancelled by user
+                    if (InventoryList == null || InventoryList.Count == 0)
+                        MessageBox.Show("Nothing to export.", "Export to Excel", MessageBoxButton.OK, MessageBoxImage.Information);
+                    else
+                        MessageBox.Show("Export cancelled.", "Export to Excel", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Excel exported.", "Export complete", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to export Excel:\n" + ex.Message, "Export error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         // This method will open the specific "Inventory Count Report"
@@ -394,8 +411,12 @@ namespace WEGutters
             MessageBox.Show("Sorting... (functionality to be added)");
         }
 
+
         #endregion
 
-       
+        private void rbStock_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

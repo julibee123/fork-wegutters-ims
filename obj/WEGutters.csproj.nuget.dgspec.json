@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jullian\\Documents\\GitHub\\fork-wegutters-ims\\WEGutters.csproj": {}
+    "C:\\Users\\Amos\\Source\\Repos\\fork-wegutters-ims\\WEGutters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jullian\\Documents\\GitHub\\fork-wegutters-ims\\WEGutters.csproj": {
+    "C:\\Users\\Amos\\Source\\Repos\\fork-wegutters-ims\\WEGutters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jullian\\Documents\\GitHub\\fork-wegutters-ims\\WEGutters.csproj",
+        "projectUniqueName": "C:\\Users\\Amos\\Source\\Repos\\fork-wegutters-ims\\WEGutters.csproj",
         "projectName": "WEGutters",
-        "projectPath": "C:\\Users\\Jullian\\Documents\\GitHub\\fork-wegutters-ims\\WEGutters.csproj",
-        "packagesPath": "C:\\Users\\Jullian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jullian\\Documents\\GitHub\\fork-wegutters-ims\\obj\\",
+        "projectPath": "C:\\Users\\Amos\\Source\\Repos\\fork-wegutters-ims\\WEGutters.csproj",
+        "packagesPath": "C:\\Users\\Amos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amos\\Source\\Repos\\fork-wegutters-ims\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jullian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.1.2, )"
@@ -82,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
